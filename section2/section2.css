@@ -1,0 +1,396 @@
+:root{
+    --button-left: 5%;
+    --button-top: 80%;
+    --button-width: 200px;
+    --button-height: 200px;
+}
+
+#section2{
+    position: absolute;
+    top: 1300px;
+    left: -0.5%;
+    width: 100%;
+    height: 800px;
+
+    background:transparent;
+    border: none;
+    border-radius: 10px;
+}
+.section2title{
+    color: white;
+    font-size: 100px;
+    font-weight: 50000;
+
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, 0);
+
+    font-family: 'Segoe UI', sans-serif;
+
+    white-space: none;
+}
+
+
+.stage{
+    position: absolute;
+    border: 5px solid #00f2fe;
+    border-radius: 50%;
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+
+    transform: translateX(-50%);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    cursor: pointer;
+
+}
+
+#simple_product{
+    top: 40%;
+    left: 20%;
+    width: 200px;
+    height: 200px;
+
+    background-image: url('/section2/section2img/Trust.png');
+    
+}
+#more_integrated{
+    top: 45%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+
+    background-image: url('/section2/section2img/Integrate.png');
+}
+#release{
+    top: 50%;
+    left: 85%;
+    width: 150px;
+    height: 150px; 
+
+    background-image: url('/section2/section2img/Control.png');
+}
+.pole{
+    position: absolute;
+    background-color:#00f2fe;
+    width: 10px;
+}
+.stage:hover{
+    transform: translateX(-50%) scale(1.1);
+}
+.stage:active{
+    transform: translateX(-50%) scale(1);
+}
+
+.UI{
+    position: absolute;
+    width: 1800px;
+    height: 800px;
+
+    top: 0;
+    left: 1800px;
+
+    background: transparent;
+    border: none;
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+
+}
+
+
+.main_text{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 5000;
+
+    font-size: 50px;
+    white-space: nowrap;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: white;  
+}
+#simple_product_UI{
+    display: none;
+}
+#more_integrated_UI{
+    display :none;
+}
+#release_UI{
+    display: none;
+}
+
+.sp_steps{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #00f2fe;
+    background: rgb(112, 248, 255);
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    cursor:pointer;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    z-index: 1;
+}
+.sp_steps:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.sp_steps:active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#sp_first_step{
+    left: 20%;
+}
+#sp_second_step{
+    left: 50%;
+}
+#sp_third_step{
+    left: 80%;
+}
+
+.sp_step_UI{
+
+    position :absolute;
+    top: 40%;
+
+    cursor: pointer;
+
+    transform: translate(-50%, -30%);
+
+    z-index: 2;
+
+    width: 450px;
+    height: 150px;
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23 ,1);
+
+    background-color: rgb(112, 248, 255);
+
+    border: 5px solid #00f2fe;
+    border-radius: 5.5px;
+}
+#sp_fs_UI{
+    left: 20%;
+    display: none;
+}
+#sp_ss_UI{
+    left: 50%;
+    display: none;
+}
+#sp_ts_UI{
+    left: 80%;
+    display: none;
+}
+.step_UI_content{
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.mi_idea{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #00f2fe;
+    background: rgb(112, 248, 255);
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    cursor:pointer;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    z-index: 1;
+}
+#more_integrated_first{
+    left: 20%;
+}
+#more_integrated_second{
+    left: 50%;
+}
+#more_integrated_third{
+    left: 80%;
+}
+
+.mi_UI{
+    position :absolute;
+    top: 40%;
+
+    cursor: pointer;
+
+    transform: translate(-50%, -30%);
+
+    z-index: 2;
+
+    width: 450px;
+    height: 150px;
+
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23 ,1);
+
+    background-color: rgb(112, 248, 255);
+
+    border: 5px solid #00f2fe;
+    border-radius: 5.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 5000;
+
+    color: white;
+}
+
+.mi_header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; height: fit-content;
+}
+.mi_text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; height: fit-content;
+}
+#glucose_link{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; height: fit-content;
+}
+#biochemistry_link{
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content; height: fit-content;
+}
+
+
+
+#mi_first_UI{
+    left: 20%;
+    display: none;
+}
+#mi_second_UI{
+    left: 50%;
+    display: none;
+}
+#mi_third_UI{
+    left: 80%;
+    display: none;
+}
+
+
+.release_idea{
+    position: absolute;
+    transform: translateX(-50%, -50%);
+    background-color: red;
+    border-radius: 50%;
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+    border: 5px solid #0033ff;
+}
+
+#release_first{
+    top: 30%;
+    left: 40%;
+    width: 200px; height: 200px; 
+    display: none;
+    background-image: url(/section2/section2img/AILiver.png); background-size: cover; background-repeat: no-repeat;
+}
+#release_second{
+    top: 28%;
+    left: 42%;
+    width: 220px; height: 220px;
+    display: none;
+    background-image: url(/section2/section2img/AgentAI.png); background-size: cover; background-repeat: no-repeat;
+}
+#release_third{
+    top: 25%;
+    left: 41%;
+    width: 210px; height: 210px;
+    display: none;
+    background-image: url(/section2/section2img/AILearn.png); background-size: cover; background-repeat: no-repeat;
+}
+
+.release_desc{
+    color: #0033ff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: fit-content; height: fit-content;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    font-weight: 5000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    
+}
+
+.release_view{
+    position: absolute;
+    top: 65%; left: 45%; transform: translate(-50%, -50%);
+    width: 400px; height: 100px;
+    border: 5px solid #00f2fe; border-radius: 10px;
+    background-color: #0033ff;
+    color: #00f2fe; font-family: 'Segoe UI', sans-serif; font-size: 25px; font-weight: 5000;
+    cursor:pointer;
+    transition: all 0.6s cubic-bezier(0.32, 1, 0.23, 1);
+}
+.release_view:hover{
+    transform:translate(-50%, -50%) scale(1.1);
+}
+.release_view:active{
+    transform:translate(-50%, -50%) scale(1);
+}
+
+#rl_close{
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+#rl_open{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
